@@ -1,6 +1,11 @@
-package com.gg.strategy.stage1;
+package com.gg.strategy.stage2;
 
 import java.util.Scanner;
+
+import com.gg.strategy.stage1.DiscountPrice;
+import com.gg.strategy.stage1.NumberPrice;
+import com.gg.strategy.stage1.Price;
+import com.gg.strategy.stage1.ReturnPrice;
 
 public class TestView {
 
@@ -15,8 +20,8 @@ public class TestView {
 				int num = in.nextInt();
 				System.out.println("请选择优惠方式：");
 				int type = in.nextInt();
-				Price numberPrice = PriceFactory.createPrice(price, num, type);
-				result += numberPrice.getPrice();
+				PriceContext priceContext = new PriceContext(price, num, type);
+				result += priceContext.getPrice();
 				System.out.println("结果是：" + result);
 			}
 		} catch (Exception e) {

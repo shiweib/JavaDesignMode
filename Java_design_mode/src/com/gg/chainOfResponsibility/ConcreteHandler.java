@@ -19,7 +19,7 @@ public class ConcreteHandler extends Handler{
          * 如果有，就转发请求给后继的责任对象
          * 如果没有，则处理请求
          */
-        if(getSuccessor() != null)
+        if(getSuccessor() != null)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
         {            
             System.out.println("放过请求");
             getSuccessor().handleRequest();            

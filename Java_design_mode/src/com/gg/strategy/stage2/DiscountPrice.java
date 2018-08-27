@@ -1,4 +1,4 @@
-package com.gg.strategy.stage1;
+package com.gg.strategy.stage2;
 
 /**
  * 
